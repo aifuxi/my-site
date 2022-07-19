@@ -6,13 +6,13 @@ import Footer from '../components/Footer';
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <>
+    <div className="bg-gray-100">
       <Header />
-      <div className="min-h-screen">
+      <div className="container min-h-screen mx-auto">
         <Component {...pageProps} />
       </div>
       <Footer />
-    </>
+    </div>
   );
 }
 

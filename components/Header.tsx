@@ -77,13 +77,7 @@ const Header: React.FC = () => {
           </li>
         </ul>
       </div>
-      <div className="navbar-end">
-        <div className="avatar">
-          <div className="w-12 rounded-full">
-            <img src="https://placeimg.com/192/192/people" />
-          </div>
-        </div>
-      </div>
+      <div className="navbar-end"></div>
     </div>
   );
 };
