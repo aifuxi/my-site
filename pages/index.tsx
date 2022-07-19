@@ -1,7 +1,8 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
 import Link from 'next/link';
-
+import 'react-responsive-carousel/lib/styles/carousel.min.css'; // requires a loader
+import { Carousel } from 'react-responsive-carousel';
 const Home: NextPage = () => {
   return (
     <div>
@@ -11,8 +12,27 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="flex pt-4 space-x-4">
-        <div className="flex-1 min-h-screen shadow-xl card bg-base-100 rounded-2xl">
-          left
+        <div className="flex-1 min-h-screen p-4 shadow-xl card bg-base-100 rounded-2xl">
+          <Carousel
+            autoPlay={true}
+            infiniteLoop={true}
+            showThumbs={false}
+            showStatus={false}
+            swipeable={true}
+          >
+            <div>
+              <img src="http://iph.href.lu/879x300" />
+            </div>
+            <div>
+              <img src="http://iph.href.lu/879x300" />
+            </div>
+            <div>
+              <img src="http://iph.href.lu/879x300" />
+            </div>
+            <div>
+              <img src="http://iph.href.lu/879x300" />
+            </div>
+          </Carousel>
         </div>
         <div className="overflow-hidden w-72 rounded-2xl">
           <div className="overflow-hidden shadow-xl card bg-base-100 rounded-2xl">
